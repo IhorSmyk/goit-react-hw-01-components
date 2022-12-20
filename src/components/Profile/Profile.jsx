@@ -9,7 +9,7 @@ const Profile = ({ username, tag, location, avatar, stats }) => {
           <p className="location">{location}</p>
         </div>
         <ul className="stats">
-          {/* <li>
+          <li>
             <span className="label">{Object.keys(stats)[0]}: </span>
             <span className="quantity">{stats['followers']}</span>
           </li>
@@ -20,14 +20,16 @@ const Profile = ({ username, tag, location, avatar, stats }) => {
           <li>
             <span className="label">{Object.keys(stats)[2]}: </span>
             <span className="quantity">{stats['likes']}</span>
-          </li> */}
-                  
+          </li>
 
-                  { stats.map(stat => {
-                      return ( <li><span></span><span></span></li>
-                          
-                      ) 
-                  })}
+          {/* {stats.map(stat => {
+            return (
+              <li>
+                <span>{stat}</span>
+                <span>{stats['stat']}</span>
+              </li>
+            );
+          })} */}
         </ul>
       </div>
     </>
