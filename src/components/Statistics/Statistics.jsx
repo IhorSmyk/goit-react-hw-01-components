@@ -4,11 +4,11 @@ const Statistics = ({ title, stats }) => {
       <section class="statistics">
         <h2>{title}</h2>
         <ul class="stat-list">
-          {stats.map((st, i) => {
+          {stats.map((st) => {
             return (
-              <li key={st[i].id}>
-                <span>{st[i].label}</span>
-                <span>{st[i].percentage}</span>
+              <li className="item" key={st.id}>
+                <span className="label">{st.label}: </span>
+                <span className="percentage">{st.percentage}</span>
               </li>
             );
           })}
