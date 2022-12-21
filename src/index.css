@@ -1,4 +1,4 @@
-@import-normalize; /* bring in normalize.css styles */
+/* @import-normalize;  */
 
 *,
 *::before,
@@ -15,6 +15,7 @@ h6,
 p {
   margin: 0;
 }
+
 ul,
 ol {
   margin: 0;
@@ -35,11 +36,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background-color: #d1d1d1;
   font-family: sans-serif;
   line-height: 1.5;
   font-size: 20px;
   color: #010101;
+  background-color: #d1d1d1;
 }
 
 code {
