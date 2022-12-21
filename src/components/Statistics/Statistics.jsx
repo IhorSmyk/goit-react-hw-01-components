@@ -1,10 +1,10 @@
 const Statistics = ({ title, stats }) => {
   return (
     <>
-      <section class="statistics">
+      <section className="statistics">
         <h2>{title}</h2>
-        <ul class="stat-list">
-          {stats.map((st) => {
+        <ul className="stat-list">
+          {stats.map(st => {
             return (
               <li className="item" key={st.id}>
                 <span className="label">{st.label}: </span>

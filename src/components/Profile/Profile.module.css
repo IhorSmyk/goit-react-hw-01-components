@@ -1,0 +1,21 @@
+
+.profile {
+  background-color: #ffffff;
+  width: 500px;
+}
+
+.stats {
+  list-style-type: none;
+  display: flex;
+  column-gap: 10px;
+}
+
+li {
+  flex-basis: calc((100% - 2 * 10px) / 3);
+  border: 1px solid black
+}
+
+span{
+    margin-left: auto;
+    margin-right: auto;
+}
