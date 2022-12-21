@@ -21,15 +21,6 @@ const Profile = ({ username, tag, location, avatar, stats }) => {
             <span className="label">{Object.keys(stats)[2]}: </span>
             <span className="quantity">{stats['likes']}</span>
           </li>
-
-          {/* {stats.map(stat => {
-            return (
-              <li>
-                <span>{stat}</span>
-                <span>{stats['stat']}</span>
-              </li>
-            );
-          })} */}
         </ul>
       </div>
     </>
