@@ -4,18 +4,39 @@
   width: 500px;
 }
 
+.description{
+
+}
+
+.name {
+
+}
+
+.tag{
+
+}
+
+.location{
+
+}
+
+
 .stats {
   list-style-type: none;
   display: flex;
   column-gap: 10px;
 }
 
-li {
+.item {
   flex-basis: calc((100% - 2 * 10px) / 3);
   border: 1px solid black
 }
 
-span{
+.label{
     margin-left: auto;
     margin-right: auto;
+}
+
+.quantity{
+  
 }
