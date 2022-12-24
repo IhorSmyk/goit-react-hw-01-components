@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
-    <div className={s.profile}>
+    <div className={s.profile + ' box'}>
       <div className="description">
         <img src={avatar} alt="User avatar" className={s.avatar} />
         <p className={s.name}>{username}</p>
@@ -12,19 +12,19 @@ const Profile = ({ username, tag, location, avatar, stats }) => {
       </div>
       <ul className={s.stats}>
         <li className={s.item}>
-          <span className={s.label}>
+          <span>
             {Object.keys(stats)[0]}:<br />
           </span>
           <span className={s.quantity}>{stats['followers']}</span>
         </li>
         <li className={s.item}>
-          <span className={s.label}>
+          <span>
             {Object.keys(stats)[1]}:<br />
           </span>
           <span className={s.quantity}>{stats['views']}</span>
         </li>
         <li className={s.item}>
-          <span className={s.label}>
+          <span>
             {Object.keys(stats)[2]}:<br />
           </span>
           <span className={s.quantity}>{stats['likes']}</span>
