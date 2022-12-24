@@ -1,6 +1,6 @@
-.profile {
+.box {
   background-color: #a2d5c6;
-  width: 480px;
+  width: 580px;
   border-radius: 8px;
   margin-left: auto;
   margin-right: auto;
@@ -10,8 +10,15 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
+.profile{
+    width: 580px;
+
+}
+
 .avatar {
-  width: inherit;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 50%;
   padding: 8px;
   background-color: #f1f1f1;
@@ -19,7 +26,7 @@
 
 .name {
   color: #5c3c92;
-  margin-top: 10px;
+  margin-top: 20px;
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
