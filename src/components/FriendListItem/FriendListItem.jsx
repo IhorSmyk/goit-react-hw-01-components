@@ -1,13 +1,14 @@
+import s from './FriendListItem.module.css';
 import PropTypes from 'prop-types';
 
 const FriendListItem = ({ avatar, name, isOnline }) => {
-  // const backColor = isOnline ? '#00ff00' : '#ff0000';
-
+  const isOnlineBackground = isOnline ? 'online' : 'offline';
+  const isOnlineMark = isOnline ? 'onlineStatus' : 'offlineStatus';
   return (
-    <li className="item">
-      <span className="status"></span>
-      <img className="avatar" src={avatar} alt="User avatar" width="48" />
-      <p className="name">{name}</p>
+    <li className={s.item + ' ' + s[isOnlineBackground]}>
+      <span className={s[isOnlineMark]}></span>
+      <img className={s.avatar} src={avatar} alt="User avatar" width="48" />
+      <p className={s.name}>{name}</p>
     </li>
   );
 };

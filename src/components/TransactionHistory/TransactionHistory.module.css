@@ -1,9 +1,36 @@
-.statistics{
-  padding: 2px;
+.table {
+  padding: 5px;
+  text-align: center;
 }
 
+.tHead {
+  color: #222222;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  height: 60px;
+}
 
+tBody {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  height: 60px;
+}
 
+.row {
+  height: 40px;
+}
 
-/*use colors*/
-/*Hex code: #d72631  #a2d5c6  #077b8a  #5c3c92  */
+.row:nth-child(2n + 1) {
+  color: #222222;
+  background-color: #077b8a;
+}
+
+.row:nth-child(2n) {
+  background-color: #222222;
+}

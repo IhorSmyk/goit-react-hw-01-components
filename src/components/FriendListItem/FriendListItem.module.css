@@ -1,0 +1,52 @@
+.item {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.status {
+  width: 18px;
+  height: 18px;
+  display: block;
+  border-radius: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.onlineStatus {
+  composes: status;
+  background-color: #32cd32;
+}
+
+.offlineStatus {
+  composes: status;
+  background-color: #d72631;
+}
+
+.online {
+  background-image: linear-gradient(to right, transparent, #32cd32);
+}
+
+.offline {
+  background-image: linear-gradient(to right, transparent, #ff8886);
+}
+
+.avatar {
+  width: 130px;
+  margin-left: 40px;
+}
+
+.name {
+  color:#222222;
+  margin-top: 20px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: 55px;
+}

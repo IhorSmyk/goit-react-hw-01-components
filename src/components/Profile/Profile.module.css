@@ -12,7 +12,7 @@
 }
 
 .name {
-  color: #5c3c92;
+  color: #222222;
   margin-top: 20px;
   font-style: normal;
   font-weight: 700;
@@ -43,14 +43,11 @@
 
 .item {
   flex-basis: calc((100% - 2 * 10px) / 3);
-  border: 1px solid #5c3c92;
-  border-radius: 8px;
+  border: 1px solid #222222;
+  border-radius: 5px;
   padding: 10px;
 }
 
 .quantity {
-  color: #5c3c92;
+  color: #222222;
 }
-
-/*use colors*/
-/*Hex code:  #d72631  #a2d5c6  #077b8a  #5c3c92  #f1f1f1  */
