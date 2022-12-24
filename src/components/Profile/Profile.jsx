@@ -3,25 +3,31 @@ import s from './Profile.module.css';
 
 const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
-    <div className="profile">
+    <div className={s.profile}>
       <div className="description">
-        <img src={avatar} alt="User avatar" className="avatar" />
-        <p className="name">{username}</p>
-        <p className="tag">@{tag}</p>
-        <p className="location">{location}</p>
+        <img src={avatar} alt="User avatar" className={s.avatar} />
+        <p className={s.name}>{username}</p>
+        <p className={s.tag}>@{tag}</p>
+        <p className={s.location}>{location}</p>
       </div>
-      <ul className="stats">
-        <li className="item">
-          <span className="label">{Object.keys(stats)[0]}: </span>
-          <span className="quantity">{stats['followers']}</span>
+      <ul className={s.stats}>
+        <li className={s.item}>
+          <span className={s.label}>
+            {Object.keys(stats)[0]}:<br />
+          </span>
+          <span className={s.quantity}>{stats['followers']}</span>
         </li>
-        <li className="item">
-          <span className="label">{Object.keys(stats)[1]}: </span>
-          <span className="quantity">{stats['views']}</span>
+        <li className={s.item}>
+          <span className={s.label}>
+            {Object.keys(stats)[1]}:<br />
+          </span>
+          <span className={s.quantity}>{stats['views']}</span>
         </li>
-        <li className="item">
-          <span className="label">{Object.keys(stats)[2]}: </span>
-          <span className="quantity">{stats['likes']}</span>
+        <li className={s.item}>
+          <span className={s.label}>
+            {Object.keys(stats)[2]}:<br />
+          </span>
+          <span className={s.quantity}>{stats['likes']}</span>
         </li>
       </ul>
     </div>

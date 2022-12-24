@@ -1,4 +1,4 @@
- @import-normalize;  
+@import-normalize;
 
 *,
 *::before,
@@ -39,11 +39,11 @@ body {
   font-family: sans-serif;
   line-height: 1.5;
   font-size: 20px;
-  color: #010101;
-  background-color: #d1d1d1;
+  color: #077b8a;
+  background-image: linear-gradient(to right, #e66465, #9198e5);
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
+} */
